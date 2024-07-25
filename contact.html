@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>InstantConnect Contact Center - Contacto</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!--Contact Button and form Contact-->
+  <meta content="" content="width=device-width, initial-scale=1">
+  
+  <style>
+	  
+    .button {
+      border-radius: 80px;
+      background-color: skyblue;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 15px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button:hover span {
+      padding-right: 25px;
+      color: rgb(20, 134, 172);
+    }
+    
+    .button:hover span:after {
+      opacity: 1;
+      right: 0;
+      color: rgb(20, 134, 172);
+    }
+    </style>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="/contactform/style.css">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+	
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center ">
+    <div class="container d-flex justify-content-between align-items-center">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><img src="assets/img/instantconnectlogo3.png" alt="<div data-src="" width="75px" height="100px" alt="" uk-img><span>InstantConnect</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="" href="index.html">Inicio</a></li>
+			<li><a href="pistatxo.html">Pistatxo</a></li>
+          <li><a href="about.html">Sobre Nosotros</a></li>
+          <li><a href="services.html">Servicios</a></li>
+          <li><a href="team.html">Equipo</a></li>
+          <li><a href="contact.html">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Contact Section ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Contacto</h2>
+          <ol>
+            <li><a href="index.html">Inicio</a></li>
+            <li>Contacto</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section class="contact" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-6">
+
+            <div class="row">
+              <div class="col-md-12">
+                <div class="info-box">
+                  <i class="bx bx-map"></i>
+                  <h3>Dirección</h3>
+                  <p>Camino Coaita 1996, Montevideo, 12600</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bx-envelope"></i>
+                  <h3>Envíanos un correo</h3>
+                  <p>contacto@instantconnectcc.com.uy</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="info-box">
+                  <i class="bx bxl-whatsapp"></i>
+                  <h3>Contáctenos</h3>
+                  <p><a href="https://wa.me/59891775202" class="whatsapp">091 775 202</i></a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+            <div class="col-lg-6" >
+              <div class="row">
+                <form name="googlesheet" action="" onsubmit="myFunction()" method="POST" target="_blank">
+                  <div class="form-group mb-3">
+                    <h2>Contacto</h2>
+                    <input name="Nombre" type="text" class="form-control" placeholder="Nombre" required> 
+                  </div>
+                  <div class="form-group mb-3">
+                    <input name="Apellido" type="text" class="form-control" placeholder="Apellido" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input name="Teléfono" type="number" class="form-control" placeholder="Teléfono" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input name="Correo electrónico" type="email" class="form-control" placeholder="Correo electrónico" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <input name="Asunto" type="text" class="form-control" placeholder="Asunto" required>
+                  </div>
+                  <div class="form-group mb-3">
+                    <textarea name="Mensaje" type="text" class="form-control" rows="5" placeholder="Mensaje" required></textarea>
+                  </div>
+                  <div>
+                  </div>
+                  <div class="text-center">
+                    <button class="button" type="submit" onclick="myFunction()" position="left"><span>Enviar Mensaje </span></button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+
+			const scriptURL = "https://script.google.com/macros/s/AKfycbxXRKCqNx3RX8ZIaoBuBjNQx3xrOqPdoBBc9AOcoANxlHeOMVFA-PKX6yTLSPfUfCeTMw/exec";
+			const form = document.forms["googlesheet"];
+			form.addEventListener("submit", e => {
+			e.preventDefault();
+			alert("Gracias por tu mensaje, nos pondremos en contacto contigo a la brevedad. PRESIONA EL BOTON PARA CONTINUAR");
+			fetch(scriptURL, { method: "POST", body: new FormData(form) })
+            .then(response => console.log("Success!", response))
+            .catch(error => console.error("Error!", error.message))
+			//document.googlesheet.reset();
+			setTimeout(function() { location.reload(true); }, 0100);
+			//document.googlesheet.reset();
+			});
+			
+      </script>
+    </section><!-- End Contact Section -->
+
+			
+			
+    <!-- ======= Map Section ======= -->
+    
+    <!-- End Map Section -->
+
+			
+			
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Enlaces Útiles</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="index.html">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="about.html">Sobre Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Servicios</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="contact.html">Contacto</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Nuestros Servicios</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Atención al Cliente</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Soporte Técnico</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Llamadas Salientes</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="services.html">Llamadas Entrantes</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-contact">
+            <h4>Contacto</h4>
+            <p>
+              Camino Coaita 1996<br>
+              Montevideo, 12600<br>
+              Uruguay <br><br>
+              <strong>Teléfono: </strong><br> +598 091 775 202<br>
+			<strong>Email: </strong><br> 
+			contacto@instantconnectcc.com.uy
+            </p>
+
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3>Sobre InstantConnect</h3>
+            <p>Nuestro compromiso con la excelencia en servicio al cliente se refleja en cada interacción. Nos esforzamos por superar expectativas, construir confianza y mejorar la satisfacción del cliente en cada interacción.</p>
+            <div class="social-links mt-3">
+              <a href="https://wa.me/59891775202" class="whatsapp"><i class="bx bxl-whatsapp"></i></a>
+              <a href="https://www.instagram.com/instant_connectcc/" class="instagram"><i class="bx bxl-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+		<div class="copyright">
+			<h6>Copyright © Instant Connect CC 2024. Todos los derechos reservados.</h6>
+        	<p>Diseño por <a href="https://www.instagram.com/instant_connectcc/" style="color:#36AE7C;">@instant_connectcc</a> - Gaston Cedres </p>
+		</div>
+    </div>
+  </footer><!-- End Footer -->
+
+
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

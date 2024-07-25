@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" 
+          content="IE=edge">
+    <meta name="viewport" 
+          content="width=device-width, initial-scale=1.0">
+    <title>
+        Pistatxo Fusion
+    </title>
+
+    <style>
+        /* Styling the Body element 
+        i.e. Color, Font, Alignment */
+        body {
+            background-image: url("images/plato2.png");
+            background-repeat: no-repeat;
+            font-family: Verdana;
+            text-align: center;
+        }
+
+        /* Styling the Form (Color, Padding, Shadow) */
+        form {
+            background-color: #ffffffa8;
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 30px 20px;
+            box-shadow: 2px 5px 10px rgb(0, 0, 0);
+            border-radius: 2%
+        }
+
+        /* Styling form-control Class */
+        .form-control {
+            text-align: left;
+            margin-bottom: 25px;
+        }
+
+        /* Styling form-control Label */
+        .form-control label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        /* Styling form-control input, 
+        select, textarea */
+        .form-control input,
+        .form-control select,
+        .form-control textarea {
+            border: 1px solid #000000;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 10px;
+            display: block;
+            width: 95%;
+        }
+
+        /* Styling form-control Radio 
+        button and Checkbox */
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+
+        .footer-info {
+            color: #ffffff;
+            font-size: 12px;
+            font-style: italic;
+        }
+
+        h4 {
+            color: #ffffff;
+            margin-right: 0%;
+            margin-top: -20px;
+        }
+
+        h1 {
+            color: #ffffff;
+        }
+
+        .logo1 {
+            width: 150px;
+            height: auto;
+        }
+
+        .logo2 {
+            width: 80px;
+            height: auto;
+            float: right;
+        }
+
+        .logo3 {
+            width: 100px;
+            height: auto;
+            float: left;
+            padding-bottom: 50px;
+        }
+
+        /* Styling Button */
+      button {
+        border-radius: 80px;
+        background-color: rgb(199, 213, 218);
+        border: none;
+        color: #13150e;
+        text-align: center;
+        font-size: 15px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      button:hover span {
+        padding-right: 25px;
+        color: rgb(253, 254, 255);
+      }
+      
+      button:hover span:after {
+        opacity: 1;
+        right: 0;
+        color: rgb(231, 231, 231);
+      }
+      
+      button[type=submit] {
+        background: #35b7f9ce;
+        border: 0;
+        padding: 10px 24px;
+        color: #000000;
+        transition: 0.5s;
+    }
+    
+    button[type=submit]:hover {
+        background: #e9caca;
+    }
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0%);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+    </style>
+</head>
+
+<body>
+    <!-- Input Type Radio Button -->
+    <a href="https://pistatxofusion.com"><img src="/images/pistatxofusion-logo.png" class="logo1"></a>
+
+    <h1>Pistatxo Fusion - Encuesta</h1>
+    <h4>By <a href="https://www.instagram.com/pistatxofusion/">Danilo González</h4></a>
+
+    <!-- Create Form -->
+    <form id="form" method="post" action="" name="form">
+
+        <!-- Details -->
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Nombre
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" name="Nombre" 
+                   placeholder="Nombre completo" />
+        </div>
+
+        <div class="form-control">
+            <label for="email" id="label-email">
+                Correo electrónico
+            </label>
+
+            <!-- Input Type Email-->
+            <input type="email" name="Correo electrónico" 
+                   placeholder="Correo electrónico" />
+        </div>
+
+        <div class="form-control">
+            <label for="age" id="label-age">
+                Edad
+            </label>
+
+            <!-- Input Type Text -->
+            <input type="text" name="Edad"
+                   placeholder="Edad" />
+        </div>
+
+        <div class="form-control" name="Cuál de las opciones te describe mejor?">
+            <label for="role" id="label-role" name="Cuál de las opciones te describe mejor?">
+                Cuál de las opciones te describe mejor?
+            </label>
+
+            <!-- Dropdown options -->
+            <select name="Cuál de las opciones te describe mejor?">
+                <option value="Estudiante" name="Cuál de las opciones te describe mejor?">Estudiante</option>
+                <option value="Trabajador independiente" name="Cuál de las opciones te describe mejor?">Trabajador independiente</option>
+                <option value="Profesional" name="Cuál de las opciones te describe mejor?">Profesional</option>
+                <option value="Otro" name="Cuál de las opciones te describe mejor?">Otro</option>
+            </select>
+        </div>
+
+        <div class="form-control" name="Recomendarías Pistatxo Fusion a tu amigos?">
+            <label>
+                Recomendarías Pistatxo Fusion a tu amigos?
+            </label>
+
+            <!-- Input Type Radio Button -->
+            <label for="Recomendarías Pistatxo Fusion a tu amigos?" name="Recomendarías Pistatxo Fusion a tu amigos?">
+                <input type="radio" value="Si" name="Recomendarías Pistatxo Fusion a tu amigos?">Si
+                </input>
+            </label>
+            <label for="Recomendarías Pistatxo Fusion a tu amigos?" name="Recomendarías Pistatxo Fusion a tu amigos?">
+                <input type="radio" value="No" name="Recomendarías Pistatxo Fusion a tu amigos?">No
+                </input>
+            </label>
+            <label for="Recomendarías Pistatxo Fusion a tu amigos?" name="Recomendarías Pistatxo Fusion a tu amigos?">
+                <input type="radio" value="Quizás" name="Recomendarías Pistatxo Fusion a tu amigos?">Quizás
+                </input>
+            </label>
+        </div>
+
+        <div class="form-control" name="Platos que le gustaría probar en un restaurante">
+            <label>Platos que le gustaría probar en un restaurante
+                <small>(Selecciones todos los que apliquen)</small>
+            </label>
+            <!-- Input Type Checkbox -->
+            <label for="inp-1" name="Platos que le gustaría probar en un restaurante">
+                <input type="checkbox" value="susana" name="Platos que le gustaría probar en un restaurante"> susana
+                  </input>
+              </label>
+            <label for="inp-2">
+                <input type="checkbox" value="Tomate" name="Platos que le gustaría probar en un restaurante"> Tomate
+                  </input>
+            </label>
+            <label for="inp-3">
+                <input type="checkbox" value="Naranja" name="Platos que le gustaría probar en un restaurante"> Naranja
+                  </input>
+            </label>
+            <label for="inp-4">
+                <input type="checkbox" value="Uva" name="Platos que le gustaría probar en un restaurante"> Uva
+                  </input>
+            </label>
+            <label for="inp-5">
+                <input type="checkbox" value="Manzana" name="Platos que le gustaría probar en un restaurante"> Manzana
+                  </input>
+            </label>
+            <label for="inp-6">
+                <input type="checkbox" value="Limón" name="Platos que le gustaría probar en un restaurante"> Limón
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" value="Papa" name="Platos que le gustaría probar en un restaurante"> Papa
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" value="Lechuga" name="Platos que le gustaría probar en un restaurante"> Lechuga
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" value="Ajo" name="Platos que le gustaría probar en un restaurante"> Ajo
+                  </input>
+            </label>
+            <label for="inp-7">
+                <input type="checkbox" value="Cebolla" name="Platos que le gustaría probar en un restaurante"> Cebolla
+                  </input>
+            </label>
+        </div>
+
+        <div class="form-control">
+            <label for="comment" value="Comentarios" name="Comentarios">
+                Déjenos sus comentarios:
+            </label>
+
+            <!-- multi-line text input control -->
+        <textarea name="Comentarios" value="Comentarios" id="comment" placeholder="Comentarios"></textarea>
+        </div>
+        
+        <div>
+            <!-- Multi-line Text Input Control -->
+             <button type="submit" value="submit" class="button1">
+                Enviar
+            </button>
+        </div>
+    </form>
+
+    <script src="pistatxo-fusion.js"></script>
+<a href="https://www.instagram.com/pistatxofusion/" class="instagram"><i class="bx bxl-instagram">
+    <div class="footer-info">
+        <a href="https://www.instantconnectcc.com.uy/index.html"><img src="/images/instantconnectlogo3.png" class="logo3"></a><a href="https://pistatxofusion.com"><img src="/images/pistatxofusion-logo.png" class="logo2"></a>
+        <h3>Encuesta realizada por InstantConnect</h3>
+        <p>Nuestro compromiso con la excelencia en servicio al cliente se refleja en cada interacción. Nos esforzamos por superar expectativas, construir confianza y mejorar la satisfacción del cliente en cada interacción.</p>
+    </div>
+</body>
+
+</html>
